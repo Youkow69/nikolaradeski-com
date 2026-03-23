@@ -13,11 +13,11 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg: #f5f5f5;
-  --bg-white: #ffffff;
-  --text: #1a1a1a;
-  --text-light: #666;
-  --accent: #e8772e;
+  --bg: #0a0e1a;
+  --bg-white: #111827;
+  --text: #f0f0f0;
+  --text-light: #9ca3af;
+  --accent: #3b82f6;
   --radius: 16px;
   --radius-sm: 10px;
   --font-heading: 'ClashDisplay', sans-serif;
@@ -136,6 +136,12 @@ body {
   border: 3px solid var(--bg);
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
+.hero-avatar--logo {
+  border-radius: 16px;
+  border: none;
+  width: 120px;
+  height: auto;
+}
 .hero-subtitle {
   font-size: 0.9rem;
   color: var(--text-light);
@@ -234,13 +240,13 @@ body {
   background: var(--accent);
   color: #fff;
 }
-.btn-primary:hover { background: #d06a25; }
+.btn-primary:hover { background: #2563eb; }
 .btn-outline {
   background: transparent;
   color: var(--text);
-  border: 1.5px solid #ddd;
+  border: 1.5px solid #333;
 }
-.btn-outline:hover { border-color: var(--text); }
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
 .stats-bar {
   margin-bottom: 24px;
@@ -261,8 +267,8 @@ body {
   overflow: hidden;
   margin: 32px -24px;
   padding: 16px 0;
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #1f2937;
+  border-bottom: 1px solid #1f2937;
 }
 .marquee-inner {
   display: flex;
@@ -321,7 +327,7 @@ body {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 16px 0;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #1f2937;
   gap: 16px;
 }
 .career-role {
@@ -371,7 +377,7 @@ body {
 /* ===== FAQ ===== */
 .faq-list { max-width: 700px; }
 .faq-item {
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #1f2937;
 }
 .faq-question {
   width: 100%;
@@ -424,7 +430,7 @@ body {
 .contact-form select,
 .contact-form textarea {
   padding: 14px 18px;
-  border: 1.5px solid #e0e0e0;
+  border: 1.5px solid #1f2937;
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -489,7 +495,7 @@ body {
   color: #fff !important;
   font-weight: 500;
 }
-.nav-cta:hover { background: #d06a25 !important; }
+.nav-cta:hover { background: #2563eb !important; }
 
 /* ===== SCROLL ANIMATIONS ===== */
 .fade-in {
